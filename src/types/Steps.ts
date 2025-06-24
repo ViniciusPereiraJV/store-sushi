@@ -1,0 +1,1 @@
+export type Steps = "user" | "adress" | "finish";
