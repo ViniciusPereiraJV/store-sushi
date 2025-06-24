@@ -29,15 +29,15 @@ export const ProductItem = ({item}: Props) => {
   }
 
   return (
-    <div>
-        <div className='rounded-md overflow-hidden'>
+    <div className='bg-[#27272A] rounded-md p-4'>
+        <div className='rounded-md overflow-hidden bg'>
             <img src={item.image} alt={item.name} className='w-full h-32 object-cover' />
         </div>
         <div className='mt-3 flex flex-col gap-2'>
-            <p className='text-lg'>{item.name}</p>
-            <p className='text-sm opacity-70 font-bold'>R${item.price.toFixed(2)}</p>
+            <p className='text-lg '>{item.name}</p>
+            <p className='text-sl opacity-70 font-bold  '>R${item.price.toFixed(2)}</p>
             <Button onClick={handleAddButton}>Adicionar</Button>
         </div>
-    </div>
+    </div>  
   )
 }
